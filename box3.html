@@ -1,0 +1,40 @@
+<!DOCTYPE =html>
+<html>
+<head>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300&display=swap" rel="stylesheet">  
+<style>
+ 
+   .words{
+     position: absolute;
+     color:#8e8e8e; 
+     /*text-shadow:0px 0px 2.5px #232323;*/
+     display:inline-block;
+     margin-top:15px;
+     margin-left:50px; 
+     z-index:3;
+     }       
+ 
+ body{font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;}   
+ model-viewer {
+ width: 100%;
+ height: 100%;
+ background:linear-gradient(#ededed, #e8e8e8);  
+ }
+  model-viewer#model {
+  --poster-color: transparent;
+ }
+
+</style>  
+</head>
+<body> 
+  <div class='words' >
+    <H1>Final version</H1>
+  </div>  
+<model-viewer camera-controls auto-rotate  alt="A BELT SYSTEM BY DTS INC" src="皮帶紙盒_ver.2.glb" shadow-intensity="0">
+</model-viewer>
+</body> 
+</html>
